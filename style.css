@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url("nusapenida.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;
+  height: 70px;
+  line-height: 75px;
+  background: #07c2f1;
+  border-bottom: 4px solid #07c2f1;
+}
+
+nav .navbar-brand {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+nav .nav-list {
+  display: flex;
+}
+
+nav .nav-list .nav-item {
+  cursor: pointer;
+  height: 100%;
+  width: 150px;
+  text-align: center;
+}
+
+nav .nav-list .nav-item:hover {
+  border-bottom: 4px solid #ff5f7e;
+  background: #193a53;
+}
+
+nav .nav-list .nav-item:hover .nav-link,
+nav .nav-list .nav-item:hover .bx-chevron-down {
+  color: #ff5f7e;
+}
+
+nav .nav-list .nav-item .nav-link {
+  color: #f1f1f1;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav .nav-list .nav-item .bx-chevron-down {
+  color: #f1f1f1;
+  margin-left: 0;
+  font-size: 26px;
+  transform: translateY(4px);
+}
+
+nav .dropdown-list {
+  background: #07c2f1;
+  width: 150px;
+  padding: 8px 30px;
+  text-align: left;
+  line-height: 50px;
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: 0.4s;
+}
+
+nav .nav-list .nav-item:hover .dropdown-list {
+  opacity: 1;
+  pointer-events: visible;
+  transform: translateY(-3px);
+}
+
+nav .dropdown-list .dropdown-item {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f1f1f1;
+}
+
+nav .dropdown-list .dropdown-item:hover {
+  color: #ff5f7e;
+}
